@@ -18,4 +18,4 @@ A mod for improvements to make The Institute a cleaner and more technologically 
 ### 2.0.0
 * Added an initial Director's Storage Room located through storage closet next to Institute requisition vendor.
 * Added a Vault 111 Storage container to Director's Storage Room.
-* **Automat** - Added a new auto-vendor that will allow you to sell items automatically. There is a 25% disposal and recycling fee that is charged. I thought that this would make it more lore-friendly since, as noted on automat, the assets must be liquidated by Institute assets on the surface with local vendors. The automat is located in the Director's Storage Room.
+* **Automat** - Added a new auto-vendor that will allow you to sell items automatically. There is a 25% disposal and recycling fee that is charged. I thought that this would make it more lore-friendly since, as noted on automat, the assets must be liquidated by Institute assets on the surface with local vendors. The automat is located in the Director's Storage Room. The automat will look for a Keyword "Unscrappable" which is assigned to most unique items to prevent them from being sold.
