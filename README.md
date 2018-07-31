@@ -3,6 +3,11 @@ A mod for improvements to make The Institute a cleaner and more technologically 
 
 ## Mod Changes
 
+### 2.1.1
+
+* Added Crystal as a requisition item at the request of @VaultNinja
+* Added Circuitry and Fiber Optics requisition items.
+
 ### 2.1.0
 
 * Changed the Microscope in Quarters to a terminal because it is more useful. I like the replacement since it looks like the previous microscope, but is open.
