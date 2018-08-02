@@ -3,6 +3,17 @@ A mod for improvements to make The Institute a cleaner and more technologically 
 
 ## Mod Changes
 
+### 2.2.0
+
+* **Added new Bobble Head Display in Director's Quarters.** It will display the bobble heads on shelf when added, and remove them from shelf when removed from container.
+* Straightened out Shaun's computer on his desk in Director's Quarters.
+* Moved Desk in Director's Quarters bedroom to center between wall panels.
+* Changed office cabinet next to bed in Director's Quarters bedroom into a dresser. Set the dresser to not respawn, and "NoResetZone".
+* Changed office cabinet in Director's Quarters bedroom to not respawn, and "NoResetZone".
+* Added shelves above bed in Director's Quarters.
+* Added some additional items to Director's Quarters bedroom to give it a more realistic appearance. The items are scrappable if you want to remove or take them.
+* Removed "Unknown" LCTN reference. It was likely a merge of my development mod with the production .esp.
+
 ### 2.1.1
 
 * Added Crystal as a requisition item at the request of @VaultNinja
