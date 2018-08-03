@@ -3,6 +3,10 @@ A mod for improvements to make The Institute a cleaner and more technologically 
 
 ## Mod Changes
 
+### 2.2.1
+
+* Fixed an minor issue with Bobble Head Display Script.
+
 ### 2.2.0
 
 * **Added new Bobble Head Display in Director's Quarters.** It will display the bobble heads on shelf when added, and remove them from shelf when removed from container.
