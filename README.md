@@ -3,6 +3,10 @@ A mod for improvements to make The Institute a cleaner and more technologically 
 
 ## Mod Changes
 
+### 2.3.0
+
+* Added a Recycler to Advanced Systems to breakdown MiscObject items into components.
+
 ### 2.2.1
 
 * Fixed an minor issue with Bobble Head Display Script.
