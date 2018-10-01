@@ -3,6 +3,10 @@ A mod for improvements to make The Institute a cleaner and more technologically 
 
 ## Mod Changes
 
+### 2.3.1
+
+* Refactored recycler scripts based on usage due to a bug that was not discovered during initial testing.
+
 ### 2.3.0
 
 * Added a Recycler to Advanced Systems to breakdown MiscObject items into components.
