@@ -3,6 +3,11 @@ A mod for improvements to make The Institute a cleaner and more technologically 
 
 ## Mod Changes
 
+### 2.3.2
+
+* Updated _InstituteAutoVendor.psc_ script to include debugging and trace output if Papyrus logging is enabled.
+* Fixed the Auto-Mat Vendor in the Director Storage area. I could not determine the source of the bug causing it not to work, so I replaced the instance with a new object. I examined the item along with its replacement in FO4Edit and could not see any differences. However the replacement worked, and the original file was not working. I tried to determine if it might have been an issue with the save since I used FallRimTools to clean it, and was unable to determine if it was the case using saves before and after.
+
 ### 2.3.1
 
 * Refactored recycler scripts based on usage due to a bug that was not discovered during initial testing.

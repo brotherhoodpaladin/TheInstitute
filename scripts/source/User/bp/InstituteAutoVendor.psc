@@ -15,25 +15,39 @@ Keyword Property UnscrappableObject Auto Const Mandatory
 
 Event OnInit()
 	; Before we can use OnMenuOpenCloseEvent we must register it.
+	Debug.Trace("Attempting to Register for Event")
 	RegisterForMenuOpenCloseEvent("ContainerMenu")
+	; Register a filter if necessary.
+	;	Debug.Trace("Attempting to set Inventory Filter")
+	;	AddInventoryEventFilter(None)
+	Debug.DumpEventRegistrations(self)
 EndEvent
 
 Event OnMenuOpenCloseEvent(string asMenuName, bool abOpening)
+	Debug.Trace("Checking Menu Name")
 	If (asMenuName== "ContainerMenu")
+		Debug.Trace("Inside ContainerMenu")
 		If (!abOpening)
+			Debug.Trace("ContainerMenu Closing")
 			; Check for Keyword Unscrappable which usually indicates unique objects.
 			removeUniqueItems(Game.GetPlayer(), Self)
+			Debug.Trace("Removed unscrappable items and returned to player.")
 
 			int iNumItems = Self.GetItemCount(None)
 			int iTotalValue = Self.GetInventoryValue()
+			Debug.Trace("Items: " + iNumItems + " Total Value: " + iTotalValue)
+
 			If (iNumItems > 0 && iTotalValue > 0)
 				; Since we deal in whole caps, we will cast it back to int to round to a whole number.
 				int iDisposalFee = (iTotalValue as float * 0.25) as int
 				int iTotal = iTotalValue - iDisposalFee
 				int iSelectedButtonIndex =  akAutoVendorConfirmationMessage.show(iNumItems as float, iTotalValue as float, iDisposalFee as float, iTotal as float, 0, 0, 0, 0, 0)
 				If (iSelectedButtonIndex == 1)
+					Debug.Trace("Player confirmed sale.")
 					Self.RemoveAllItems(None, False)
-					Game.GivePlayerCaps(iTotal);
+					Debug.Trace("Items removed from container inventory.")
+					Game.GivePlayerCaps(iTotal)
+					Debug.Trace("Player given caps.")
 				EndIf
 			EndIf
 		EndIf
